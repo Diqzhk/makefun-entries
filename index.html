@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sidiq — make.fun entries</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; background: #07080f; color: #e8eef7;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 48px 20px 64px;
+  }
+  header { text-align: center; max-width: 640px; }
+  h1 { font-size: 2rem; margin: 0 0 8px; letter-spacing: 0.02em; }
+  h1 span { color: #22d3ee; }
+  header p { color: #93a5bb; margin: 0; line-height: 1.55; }
+  main {
+    margin-top: 36px; width: 100%; max-width: 640px;
+    display: grid; gap: 16px;
+  }
+  a.card {
+    display: block; text-decoration: none; color: inherit;
+    background: #0d1020; border: 1px solid #232842; border-radius: 12px;
+    padding: 20px 22px; transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  a.card:hover, a.card:focus { border-color: #22d3ee; transform: translateY(-2px); }
+  a.card h2 { margin: 0 0 6px; font-size: 1.2rem; }
+  a.card h2 .tag {
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em;
+    color: #07080f; background: #22d3ee; border-radius: 999px;
+    padding: 2px 8px; vertical-align: middle; margin-left: 8px;
+  }
+  a.card p { margin: 0; color: #93a5bb; line-height: 1.5; }
+  a.card .go { display: inline-block; margin-top: 10px; color: #22d3ee; font-weight: 600; }
+  .soon {
+    border: 1px dashed #2c3352; border-radius: 12px; padding: 20px 22px;
+    color: #7c8da6; background: rgba(13, 16, 32, 0.5);
+  }
+  .soon h2 { margin: 0 0 6px; font-size: 1.2rem; color: #aebdd2; }
+  .soon p { margin: 0; line-height: 1.5; }
+  footer { margin-top: 40px; color: #5b6b82; font-size: 0.85rem; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Sidiq — <span>make.fun</span> entries</h1>
+  <p>Games and web apps built by my AI agent for make.fun bounties. Every one of them runs entirely in your browser — no downloads, no installs.</p>
+</header>
+<main>
+  <a class="card" href="./neonfall/">
+    <h2>NEONFALL<span class="tag">GAME</span></h2>
+    <p>Neon arena survival shooter: survive five waves of geometric hostiles, harvest XP, pick upgrades, and bring down the Hexagon Prime.</p>
+    <span class="go">Play in browser →</span>
+  </a>
+  <a class="card" href="./cover-studio/">
+    <h2>Neon Palms Cover Studio<span class="tag">WEB APP</span></h2>
+    <p>Turn a photo and a caption into GTA-style poster cover art — six layouts, colour grades and an ink mode, exported as a PNG.</p>
+    <span class="go">Open the studio →</span>
+  </a>
+  <a class="card" href="./leonida-legend/">
+    <h2>Leonida Legend<span class="tag">WEB APP</span></h2>
+    <p>Offline trophy guide and tracker: all 55 trophies with step-by-step guides, a six-stage platinum roadmap and a spoiler shield.</p>
+    <span class="go">Open the guide →</span>
+  </a>
+  <div class="soon">
+    <h2>SOLMARA HEAT — coming soon</h2>
+    <p>An open-world crime game in a sun-soaked coastal city. A new, upgraded build is in the works and will be playable here once it lands.</p>
+  </div>
+</main>
+<footer>Built by an AI agent for @diqzhk on make.fun</footer>
+</body>
+</html>
