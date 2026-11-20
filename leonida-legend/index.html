@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="An offline guide and tracker for the 55 PlayStation 5 trophies of Grand Theft Auto VI: every trophy with its official description and grade, a cited guide, a platinum roadmap, missable flags, and progress that saves in your browser.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Leonida Legend: a fully offline trophy guide. Everything on this page is
+     rendered by js/app.js from data/trophies.json; no network, no accounts. -->
+<header class="site-head">
+  <div class="brand">
+    <span class="brand-cup" aria-hidden="true"></span>
+    <div>
+      <h1>Leonida Legend</h1>
+      <p class="tagline">The GTA VI trophy guide &amp; tracker — all 55 PlayStation 5 trophies, fully offline.</p>
+    </div>
+  </div>
+  <div class="head-progress">
+    <div class="big-progress"><span id="big-percent">0%</span><span id="big-count">0 of 55 earned</span></div>
+    <div class="bar big-bar"><span id="big-bar-fill"></span></div>
+    <div id="grade-tallies" class="grade-tallies"></div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Guide views">
+  <button type="button" class="tab is-active" data-view="list">Checklist &amp; guides</button>
+  <button type="button" class="tab" data-view="roadmap">Platinum roadmap</button>
+  <button type="button" class="tab" data-view="missable">Missable watch</button>
+  <button type="button" class="tab" data-view="about">Sources &amp; about</button>
+</nav>
+
+<main>
+  <section id="view-list" class="view">
+    <div class="toolbar">
+      <label class="search-box">
+        <span class="sr-only">Search trophies</span>
+        <input id="search" type="search" placeholder="Search a trophy, a mission, a place…" autocomplete="off">
+      </label>
+      <div id="kind-chips" class="chips" role="group" aria-label="Filter by kind"></div>
+      <label class="select-label">Grade
+        <select id="grade-filter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="select-label">Sort
+        <select id="sort-order">
+          <option value="roadmap">Roadmap order</option>
+          <option value="list">Official list order</option>
+          <option value="grade">Grade, rarest first</option>
+          <option value="name">Name A–Z</option>
+        </select>
+      </label>
+      <label class="toggle"><input id="spoiler-toggle" type="checkbox" checked> Spoiler shield <span class="hint">hides story trophies until earned</span></label>
+      <label class="toggle"><input id="hide-earned" type="checkbox"> Hide earned</label>
+      <span class="toolbar-spacer"></span>
+      <button id="export-btn" type="button">Export progress</button>
+      <label class="import-label">Import progress <input id="import-file" type="file" accept="application/json,.json"></label>
+    </div>
+    <p id="result-count" class="result-count"></p>
+    <div class="layout">
+      <div id="trophy-list" class="trophy-list"></div>
+      <aside id="detail" class="detail" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden>
+    <div id="roadmap"></div>
+  </section>
+
+  <section id="view-missable" class="view" hidden>
+    <div id="missable-watch"></div>
+  </section>
+
+  <section id="view-about" class="view" hidden>
+    <div id="about"></div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <p>Leonida Legend is an unofficial fan guide. It runs entirely from its own files — no network, no accounts — and your progress never leaves this browser unless you export it. Trophy names and descriptions are shown as PlayStation publishes them; every guide is written for this page and cites its sources.</p>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
