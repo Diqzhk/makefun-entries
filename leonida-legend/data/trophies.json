@@ -1,0 +1,1314 @@
+{
+  "game": "Grand Theft Auto VI",
+  "platform": "PlayStation 5",
+  "list": "The official 55 trophies: 1 platinum, 2 gold, 6 silver, 46 bronze; 28 hidden on PlayStation until earned. Names, descriptions, grades and tracked counts as PlayStation publishes them, listed by Exophase and PSNProfiles on 2026-11-18.",
+  "sources": [
+    "PlayStation — the official Grand Theft Auto VI trophy list (names, descriptions, grades, hidden flags and tracked counts), as listed by Exophase and PSNProfiles",
+    "EGamers.io — GTA 6 Trophy List: All 55 Trophies and Achievements, Plus The Hardest Ones (2026-11-19): https://egamers.io/gta-6-trophy-list-all-55-trophies-and-achievements-plus-the-hardest-ones/",
+    "Leonida Interactive — GTA 6 Trophies and Xbox Achievements, Unlock Guide: https://leonidainteractive.com/wiki/guides/trophies-achievements/",
+    "Leonida Hub — GTA VI reportedly has 55 PS5 trophies (the visible/hidden split, read from platform data on 2026-11-19): https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up",
+    "PowerPyx and GTABase trophy roadmaps, as reported by EGamers.io and Leonida Interactive (difficulty 4/10, one playthrough enough, cheats disable trophies)"
+  ],
+  "stages": [
+    {
+      "n": 1,
+      "title": "The story, chapter by chapter",
+      "blurb": "One playthrough is enough for the platinum (PowerPyx roadmap, via EGamers.io). Play the five chapters in order: the chapter trophies form the spine, and the named story missions (Breakfast Run, The Cartel Heist, Child's Play, Headliners, VCIA Takedown, Operation Savage Glory) fall between chapter beats in list order. Leave cheats off for the whole run: GTABase and TechWiser report that cheats disable trophies and saving. The one flagged missable, Positive Mental Attitude, has a meditation moment in Chapter 1, so start watching for meditation spots from the opening hours."
+    },
+    {
+      "n": 2,
+      "title": "Strangers & storylines",
+      "blurb": "Finish the named characters' mission strands: Andy, Kenton, Billy, Randy, Tyrone and Bret's hunt. Any eight completed strands earn the silver Strangers & Freaks, so these six named strands plus any two more strands you meet across Leonida close the set."
+    },
+    {
+      "n": 3,
+      "title": "Activities & challenges",
+      "blurb": "Sample every activity type once first (Master of None), then work the counted sets: 42 Shooting Range challenges to gold, a Top Fun drone-race win at all 14 locations, 20 race wins, 50 challenges, 250 stunts, every meditation spot and the one-off activity trophies (fishing against Cal, an arcade clear, bowling)."
+    },
+    {
+      "n": 4,
+      "title": "Collectibles & the map",
+      "blurb": "The long tail: WAiNK It at 100 locations, 3 complete Collectible Card sets, 100 vehicles discovered and all 52 areas of Leonida explored. Do these while travelling between other objectives; the tracker counts each set separately."
+    },
+    {
+      "n": 5,
+      "title": "Crime, cash & free roam",
+      "blurb": "Free-roam feats and money: robberies (a stealth jewelry job, an armored truck, 5 bank vaults, one illegal operation per gang, 3 shops back-to-back with your partner), wanted-level escapes, the hidden one-off moments, then the money sinks: launder $250,000 of Marked Bills, spend $100,000 in shops, register 10 vehicles in the Scooter Bros app and buy all 8 garage properties."
+    },
+    {
+      "n": 6,
+      "title": "100% & the Platinum",
+      "blurb": "A Long Road asks for the game's own 100% checklist (in game: Progress, Stats, 100% Completion). When every other trophy is earned and the checklist reads 100%, the gold falls, and Vice Got a Price!, the platinum, is awarded for holding all 54 others."
+    }
+  ],
+  "trophies": [
+    {
+      "id": 1,
+      "name": "Vice Got a Price!",
+      "description": "Congratulations! You're a Leonida Legend.",
+      "grade": "platinum",
+      "hidden": false,
+      "kind": "platinum",
+      "stage": 6,
+      "order": 2,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "The platinum itself. PlayStation hands it over automatically the moment the other 54 trophies are all earned, so there is no separate task: work the roadmap stages in order and watch the last counted sets close in this tracker. Published roadmaps put the full list at roughly 200 hours with a difficulty of 4 out of 10 (PowerPyx, via EGamers.io), and a single playthrough is enough, so no second run is needed.",
+      "steps": [
+        "Earn the other 54 trophies (stages 1 to 5 of the roadmap).",
+        "Finish the 100% checklist for A Long Road (stage 6).",
+        "The platinum pops on its own once all 54 are held."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade), via Exophase and PSNProfiles",
+        "EGamers.io — GTA 6 Trophy List (platinum requirements, PowerPyx difficulty 4/10 and ~200 hours): https://egamers.io/gta-6-trophy-list-all-55-trophies-and-achievements-plus-the-hardest-ones/"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Just Like Paradise",
+      "description": "Complete Gone Fishing.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 1,
+      "order": 1,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "Story trophy, hidden on PlayStation until earned. Gone Fishing is the game's opening mission, which makes this the first trophy of any run: play through the introduction and it unlocks as the mission ends. Nothing here can be missed; on a fresh save it is the first box this tracker ticks.",
+      "steps": [
+        "Start the story.",
+        "Play the opening mission, Gone Fishing, to its end.",
+        "The trophy unlocks at mission complete."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (Gone Fishing is the opening mission): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Paradise Lost",
+      "description": "Complete Chapter 1.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 1,
+      "order": 2,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "Story trophy, hidden until earned: finish Chapter 1 of the five-chapter story. Play the chapter's missions in order and the trophy unlocks on its final beat. One caution belongs to this chapter specifically: a meditation opportunity with Lucia appears in Chapter 1 and counts toward Positive Mental Attitude, the list's one flagged missable (Leonida Interactive's unlock guide), so meditate when the game offers it rather than walking past.",
+      "steps": [
+        "Play through Chapter 1's missions.",
+        "Take the Chapter 1 meditation opportunity with Lucia when it appears (it feeds Positive Mental Attitude).",
+        "Finish the chapter's last mission to unlock the trophy."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (five chapters; the Chapter 1 meditation note): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "T**s Ass Drug Money",
+      "description": "Complete Chapter 2.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 1,
+      "order": 3,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "Story trophy, hidden until earned, asterisks and all, exactly as PlayStation publishes the name. Finish Chapter 2 and the trophy unlocks as the chapter closes. By now the map and the activity set are opening up, so sample each new activity type once as it appears; it quietly banks progress toward Master of None.",
+      "steps": [
+        "Play through Chapter 2's missions.",
+        "Sample each newly unlocked activity type once (counts toward Master of None).",
+        "Finish the chapter's last mission to unlock the trophy."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (chapter structure): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Vice City, Baby!",
+      "description": "Complete Chapter 3.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 1,
+      "order": 4,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "Story trophy, hidden until earned: finish Chapter 3, the mid-point of the five-chapter story; the trophy unlocks on the closing mission. Stranger strands start appearing in earnest around the story's middle, so finish strands as you meet them instead of leaving all eight for the clean-up stage.",
+      "steps": [
+        "Play through Chapter 3's missions.",
+        "Pick up stranger strands as they appear (eight finished strands earn Strangers & Freaks).",
+        "Finish the chapter's last mission to unlock the trophy."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (chapter structure): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Top Of The World, Ma",
+      "description": "Complete Chapter 4.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 1,
+      "order": 5,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "Story trophy, hidden until earned: finish Chapter 4, the last of the four chapter trophies. Chapter 5 follows and ends in the final mission, so treat the end of Chapter 4 as the moment to mop up any meditation spots and strands still open before pushing into the finale — even though free roam continues after the story.",
+      "steps": [
+        "Play through Chapter 4's missions.",
+        "Before the finale, revisit open meditation spots and stranger strands.",
+        "Finish the chapter's last mission to unlock the trophy."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (the fifth chapter ends with the final mission): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "You Gotta Know When to Get Off",
+      "description": "Complete the final mission.",
+      "grade": "gold",
+      "hidden": true,
+      "kind": "story",
+      "stage": 1,
+      "order": 6,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "The story's gold trophy, hidden until earned: complete the final mission at the end of Chapter 5 and it unlocks as the story ends. Everything else on the list stays available in free roam afterwards, so finishing the story early is the efficient order — it opens the whole state of Leonida for the collectible and activity stages.",
+      "steps": [
+        "Play through Chapter 5.",
+        "Complete the final mission.",
+        "The gold unlocks as the story ends; free roam continues for clean-up."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — the fifth chapter ends with the final mission, which earns the gold: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Trust",
+      "description": "Complete Breakfast Run.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 1,
+      "order": 7,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "Story trophy, hidden until earned: complete the named story mission Breakfast Run when it appears in the chapter flow. Story missions cannot be skipped, so this comes simply from playing the story; the tracker lists it separately because PlayStation does.",
+      "steps": [
+        "Reach the story mission Breakfast Run.",
+        "Complete it.",
+        "The trophy unlocks at mission complete."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (named story missions): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Break the Bank",
+      "description": "Complete The Cartel Heist.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 1,
+      "order": 8,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "Story trophy, hidden until earned: complete the named story mission The Cartel Heist. It is a set-piece heist inside the story, separate from the free-roam robbery trophies (Maximum Withdrawal and friends), which are earned outside missions. Play the story and it unlocks in sequence.",
+      "steps": [
+        "Reach the story mission The Cartel Heist.",
+        "Complete it.",
+        "The trophy unlocks at mission complete."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (named story missions): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Family Matters",
+      "description": "Complete Child's Play.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 1,
+      "order": 9,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "Story trophy, hidden until earned: complete the named story mission Child's Play when the story offers it. Like the other named-mission trophies it comes simply from playing the story; finish the mission and the trophy is yours.",
+      "steps": [
+        "Reach the story mission Child's Play.",
+        "Complete it.",
+        "The trophy unlocks at mission complete."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (named story missions): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "DWNFALL",
+      "description": "Complete Headliners.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 1,
+      "order": 10,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "Story trophy, hidden until earned: complete the named story mission Headliners. Play the story in order and the trophy unlocks when the mission ends; the official description attaches no preparation or side condition to it.",
+      "steps": [
+        "Reach the story mission Headliners.",
+        "Complete it.",
+        "The trophy unlocks at mission complete."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (named story missions): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Hi-Jacked",
+      "description": "Complete VCIA Takedown.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 1,
+      "order": 11,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "Story trophy, hidden until earned: complete the named story mission VCIA Takedown, set around Vice City International Airport. While the story has you at VCIA, keep the bronze Catch Me If You Can in mind: it asks for an unscheduled departure at the same airport, and a story visit is the natural moment to attempt it.",
+      "steps": [
+        "Reach the story mission VCIA Takedown.",
+        "Complete it.",
+        "Optionally, attempt Catch Me If You Can (an unscheduled departure at VCIA) around the same visit."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (named story missions): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Snow Storm",
+      "description": "Complete Operation Savage Glory.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 1,
+      "order": 12,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "Story trophy, hidden until earned: complete the named story mission Operation Savage Glory, the last of the six named-mission trophies in the official list's order. Finish the mission and the trophy unlocks; together with the chapter trophies it completes the story spine of the roadmap.",
+      "steps": [
+        "Reach the story mission Operation Savage Glory.",
+        "Complete it.",
+        "The trophy unlocks at mission complete."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (named story missions): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "A Long Road",
+      "description": "Attain 100% Completion.",
+      "grade": "gold",
+      "hidden": false,
+      "kind": "completion",
+      "stage": 6,
+      "order": 1,
+      "count": 100,
+      "countLabel": "% completion",
+      "missable": false,
+      "guide": "The second gold, and the list's long haul: reach 100% on the game's own completion checklist, shown in game under Progress, then Stats, then 100% Completion (Leonida Interactive's unlock guide). Almost everything else in this guide feeds it — story, strands, activities, collectibles and exploration all count toward the percentage — so work the roadmap first and treat the in-game checklist, not this tracker, as the authority on what is left. Published round-ups rate it the hardest trophy on the list (EGamers.io), mostly for the hours it takes rather than any single hard step.",
+      "steps": [
+        "Open Progress, Stats, 100% Completion in game and note the categories it tracks.",
+        "Clear roadmap stages 1 to 5; most of them feed the percentage.",
+        "Chase the checklist's remaining lines until it reads 100%."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (the 100% checklist lives under Progress, Stats): https://leonidainteractive.com/wiki/guides/trophies-achievements/",
+        "EGamers.io — GTA 6 Trophy List (A Long Road reported the hardest trophy): https://egamers.io/gta-6-trophy-list-all-55-trophies-and-achievements-plus-the-hardest-ones/"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Cunning Stunts",
+      "description": "Complete 250 Stunts.",
+      "grade": "silver",
+      "hidden": false,
+      "kind": "activities",
+      "stage": 3,
+      "order": 10,
+      "count": 250,
+      "countLabel": "stunts",
+      "missable": false,
+      "guide": "A counted silver: complete 250 stunts, the count PlayStation tracks with the trophy. Stunts are the game's jump and stunt challenges scattered across Leonida, so this is a volume trophy rather than a skill wall: clear stunt spots as you cross the map during the other stages instead of grinding them at the end. If one stunt keeps failing, leave it and take the next; no specific set is required, only the total.",
+      "steps": [
+        "Attempt stunt spots whenever travel takes you past one.",
+        "Keep a rough split: story travel first, a dedicated stunt sweep in stage 3.",
+        "Reach 250 completed stunts."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 250), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (stunts among the counted activity trophies): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Master of None",
+      "description": "Try each type of activity once.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "activities",
+      "stage": 3,
+      "order": 1,
+      "count": 9,
+      "countLabel": "activity types",
+      "missable": false,
+      "guide": "Try each of the game's 9 activity types once; the official list tracks the nine types. This is the sampler trophy and the cheapest on the list: you need neither win nor finish anything, just start each type once. Do it early, because knowing where each activity lives makes the counted activity trophies (Shooting Range, Top Fun, races, fishing, arcade, meditation, challenges) much faster later.",
+      "steps": [
+        "As each activity type unlocks, start it once.",
+        "Use the map's activity icons to find types you have not touched.",
+        "When all 9 types have been tried, the trophy unlocks."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, 9 activity types), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (activity sampler): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "The Shootist",
+      "description": "Earn a gold medal in all Shooting Range challenges.",
+      "grade": "silver",
+      "hidden": false,
+      "kind": "activities",
+      "stage": 3,
+      "order": 8,
+      "count": 42,
+      "countLabel": "Shooting Range challenges",
+      "missable": false,
+      "guide": "The list's precision test: a gold medal in all 42 Shooting Range challenges, the count PlayStation tracks. Work range by range and weapon by weapon, and learn each challenge's target pattern before chasing the gold time or score; medals are kept per challenge, so progress is never lost. If one challenge walls you, move on and return with better weapons unlocked later in the story; nothing about the ranges is missable.",
+      "steps": [
+        "Unlock the Shooting Range and clear each challenge once to learn it.",
+        "Replay for gold medal standard on all 42 challenges.",
+        "Return late-game for any stubborn challenge with better weapons."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 42), via Exophase and PSNProfiles",
+        "EGamers.io — GTA 6 Trophy List (The Shootist among the silver set): https://egamers.io/gta-6-trophy-list-all-55-trophies-and-achievements-plus-the-hardest-ones/"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Top Fun",
+      "description": "Win a Top Fun Drone Race at every location.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "activities",
+      "stage": 3,
+      "order": 6,
+      "count": 14,
+      "countLabel": "drone race locations",
+      "missable": false,
+      "guide": "Win a Top Fun drone race at every one of the 14 locations the official list tracks. A win at a location is banked, so this is fourteen separate first places rather than a streak: learn each course with a practice run, then race it clean. Drone handling improves with repetition, so take the locations easiest-first as you discover them and leave the tightest courses for last.",
+      "steps": [
+        "Find a Top Fun drone race location and learn the course.",
+        "Win the race there; the location is banked.",
+        "Repeat at all 14 locations."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 14), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (Top Fun venues): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Earn Cash, Not Kudos",
+      "description": "Win 20 different races.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "activities",
+      "stage": 3,
+      "order": 7,
+      "count": 20,
+      "countLabel": "different races won",
+      "missable": false,
+      "guide": "Win 20 different races; replays of the same race do not add to the count, so keep moving to fresh events on the map. Any race type the game counts as a race works toward the twenty, which makes this a natural companion to Top Fun and to exploring all 52 areas: race what you find, where you find it, and let the tracker watch the distinct-win count climb.",
+      "steps": [
+        "Enter races as they appear on the map.",
+        "Win one, then move to a different race; repeats do not count.",
+        "Reach 20 distinct race wins."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 20), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (race wins): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Baited My Tackle",
+      "description": "Beat Cal in a fishing challenge.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "activities",
+      "stage": 3,
+      "order": 2,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "Beat Cal, a named character, in a fishing challenge. Fishing is one of the nine activity types, so sample it once for Master of None first, then take Cal's challenge when you meet him in the world. It is a one-off contest rather than a counted set: win the challenge once and the trophy is done.",
+      "steps": [
+        "Try fishing once (also counts toward Master of None).",
+        "Meet Cal and accept his fishing challenge.",
+        "Out-fish him to unlock the trophy."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (fishing challenge against Cal): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Stick Fiddler",
+      "description": "Complete an arcade game.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "activities",
+      "stage": 3,
+      "order": 3,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "Complete one arcade game, start to finish. Any cabinet counts, so pick the shortest or the one you are best at; a completion is what is needed, not a high score. Arcades are also one of the nine activity types, so your first attempt doubles as progress toward Master of None.",
+      "steps": [
+        "Find an arcade cabinet in the world.",
+        "Play one game through to completion.",
+        "The trophy unlocks when the game ends completed."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (arcade completion): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Road to Rehabilitation",
+      "description": "Complete the final mission for Andy.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 2,
+      "order": 1,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "A character storyline trophy, hidden until earned: complete Andy's mission strand, ending with his final mission. Stranger and character strands start from their markers in the world and advance one mission at a time; finish every Andy mission as it appears and the strand's last one unlocks this. The strand also counts toward the eight finished strands needed for Strangers & Freaks.",
+      "steps": [
+        "Meet Andy and start his strand.",
+        "Complete each Andy mission as it unlocks.",
+        "Finish his final mission; the trophy and one strand credit unlock."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — hidden trophies include the characters' storylines: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "This Was No Boat Accident",
+      "description": "Complete the final mission for Kenton.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 2,
+      "order": 2,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "A character storyline trophy, hidden until earned: complete Kenton's mission strand through to his final mission. Work the strand whenever its marker is up; strands can usually be advanced between story missions, so there is rarely a reason to leave one waiting. Finishing Kenton also banks one of the eight strands for Strangers & Freaks.",
+      "steps": [
+        "Meet Kenton and start his strand.",
+        "Complete each Kenton mission as it unlocks.",
+        "Finish his final mission; the trophy and one strand credit unlock."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — hidden trophies include the characters' storylines: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "The Lone Rider",
+      "description": "Complete the final mission for Billy.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 2,
+      "order": 3,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "A character storyline trophy, hidden until earned: complete Billy's mission strand, ending with his final mission. As with the other named strands, start it when you meet him, keep it moving alongside the story, and the last mission in the chain unlocks the trophy and adds one to your strand count for Strangers & Freaks.",
+      "steps": [
+        "Meet Billy and start his strand.",
+        "Complete each Billy mission as it unlocks.",
+        "Finish his final mission; the trophy and one strand credit unlock."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — hidden trophies include the characters' storylines: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Strangers & Freaks",
+      "description": "Complete 8 mission strands for strangers across the state of Leonida.",
+      "grade": "silver",
+      "hidden": false,
+      "kind": "activities",
+      "stage": 2,
+      "order": 7,
+      "count": 8,
+      "countLabel": "stranger strands",
+      "missable": false,
+      "guide": "A counted silver: complete 8 mission strands for strangers across Leonida, the count PlayStation tracks. Six strands have their own trophies (Andy, Kenton, Billy, Randy, Tyrone and Bret), so finishing those six leaves only two more strands to find and finish anywhere in the state. Strands are chains, not single missions: a strand counts only when its final mission is done, which is why this tracker gives each named strand its own row.",
+      "steps": [
+        "Finish the six named strands (Andy, Kenton, Billy, Randy, Tyrone, Bret).",
+        "Find and finish any two further stranger strands.",
+        "The eighth completed strand unlocks the silver."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 8), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (eight side-mission chains): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Supply & Demand",
+      "description": "Complete the final mission for Randy.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 2,
+      "order": 4,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "A character storyline trophy, hidden until earned: complete Randy's mission strand through to his final mission. Keep the strand moving whenever its marker appears and the last mission unlocks the trophy; it also counts as one of the eight strands toward Strangers & Freaks.",
+      "steps": [
+        "Meet Randy and start his strand.",
+        "Complete each Randy mission as it unlocks.",
+        "Finish his final mission; the trophy and one strand credit unlock."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — hidden trophies include the characters' storylines: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Spin On This!",
+      "description": "Complete the final mission for Tyrone.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 2,
+      "order": 5,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "A character storyline trophy, hidden until earned: complete Tyrone's mission strand, ending with his final mission. Start the strand when you meet him, advance it between story beats, and the chain's end unlocks the trophy plus one strand credit toward Strangers & Freaks.",
+      "steps": [
+        "Meet Tyrone and start his strand.",
+        "Complete each Tyrone mission as it unlocks.",
+        "Finish his final mission; the trophy and one strand credit unlock."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — hidden trophies include the characters' storylines: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Positive Mental Attitude",
+      "description": "Meditate at every spot across Leonida.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "activities",
+      "stage": 3,
+      "order": 5,
+      "count": 18,
+      "countLabel": "meditation spots",
+      "missable": true,
+      "missableNote": "The one trophy published roadmaps flag as possibly missable: a meditation opportunity with Lucia in Chapter 1 counts toward the total, and whether it is required is unconfirmed (GTABase and PowerPyx, via EGamers.io and Leonida Interactive). Meditate at the Chapter 1 opportunity and at every spot the first time you pass it.",
+      "guide": "Meditate at every meditation spot across Leonida: 18 spots, the count PlayStation tracks. This is the list's one flagged missable. GTABase and PowerPyx both flag it (reported by EGamers.io), and Leonida Interactive's unlock guide explains why: a meditation opportunity with Lucia in Chapter 1 counts toward the in-game total, and whether that specific spot is required is still unclear. The safe play costs nothing: meditate at every spot the first time you find it, starting with the Chapter 1 opportunity, and never leave a spot for later.",
+      "steps": [
+        "In Chapter 1, take the meditation opportunity with Lucia when it is offered.",
+        "Meditate at every spot you discover, the first time you discover it.",
+        "Reach all 18 spots."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 18), via Exophase and PSNProfiles",
+        "EGamers.io — GTA 6 Trophy List (GTABase and PowerPyx flag this as the only possibly missable trophy): https://egamers.io/gta-6-trophy-list-all-55-trophies-and-achievements-plus-the-hardest-ones/",
+        "Leonida Interactive — Unlock Guide (the Chapter 1 meditation opportunity counts toward the total): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Fair Game",
+      "description": "Hunt a unique animal for Bret.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "story",
+      "stage": 2,
+      "order": 6,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "A character storyline trophy, hidden until earned, with a different shape from the others: Bret's strand is a hunt, and it ends when you hunt the unique animal he sends you after. Start Bret's strand when you meet him, follow the hunt through its steps, and the trophy unlocks when the unique animal is taken. It counts as one of the eight strands for Strangers & Freaks.",
+      "steps": [
+        "Meet Bret and start his hunting strand.",
+        "Follow the hunt's steps as they unlock.",
+        "Take the unique animal to finish the strand and unlock the trophy."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — hidden trophies include the characters' storylines: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Don't Touch My Deck",
+      "description": "Complete 3 Collectible Card sets.",
+      "grade": "silver",
+      "hidden": false,
+      "kind": "collectibles",
+      "stage": 4,
+      "order": 2,
+      "count": 3,
+      "countLabel": "card sets completed",
+      "missable": false,
+      "guide": "A counted silver: complete 3 full Collectible Card sets. Cards are found in the world one at a time, and a set counts only when every card in it is held, so think in sets rather than loose pickups: finish the sets you are closest to completing first instead of spreading pickups evenly. Cards you pass during other stages are free progress; grab every one you see and let the set counts build in the background.",
+      "steps": [
+        "Pick up every collectible card you come across.",
+        "Track sets, not singles: close out the nearest set first.",
+        "Complete 3 full sets."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 3), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (collectible card sets): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "You WAiNKer!",
+      "description": "WAiNK It at 100 locations.",
+      "grade": "silver",
+      "hidden": false,
+      "kind": "collectibles",
+      "stage": 4,
+      "order": 1,
+      "count": 100,
+      "countLabel": "WAiNK locations",
+      "missable": false,
+      "guide": "A counted silver: use WAiNK It at 100 different locations, the count PlayStation tracks. This is the list's purest exploration grind, and it pairs naturally with The Goodtime State (all 52 areas) and Whip It Good (100 vehicles): make WAiNK It a habit whenever you arrive somewhere new and the hundred fills in as you tour the state, rather than as a separate end-game sweep.",
+      "steps": [
+        "WAiNK It the first time you arrive at any new location.",
+        "Pair the hunt with area exploration and vehicle discovery.",
+        "Reach 100 locations."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 100), via Exophase and PSNProfiles",
+        "EGamers.io — GTA 6 Trophy List (You WAiNKer! among the silver set): https://egamers.io/gta-6-trophy-list-all-55-trophies-and-achievements-plus-the-hardest-ones/"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "One Last Thing",
+      "description": "Complete 50 Challenges.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "activities",
+      "stage": 3,
+      "order": 9,
+      "count": 50,
+      "countLabel": "challenges",
+      "missable": false,
+      "guide": "Complete 50 challenges, the count PlayStation tracks. Challenges are the game's short-form objectives, distinct from the Shooting Range set: they appear across activities and free roam, so the fifty accumulates while you work the other activity trophies. If you finish stage 3 short of fifty, the in-game challenge list shows what remains; pick the shortest ones to close the count.",
+      "steps": [
+        "Complete challenges as they appear during activities and free roam.",
+        "Check the in-game challenge list for short ones when the count stalls.",
+        "Reach 50 completed challenges."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 50), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (challenge completions): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Hot Together",
+      "description": "Lose a 4 star Wanted Level with your partner and escape the heat.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 8,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "With your partner beside you, earn a 4-star wanted level and then lose it completely, escaping the heat. The partner condition is the part players fumble: both characters must be together for the escape, so set it up deliberately in free roam rather than hoping it happens during a mission. Commit a loud crime to climb to four stars quickly, then break line of sight and hide until the stars clear.",
+      "steps": [
+        "Free roam with your partner at your side.",
+        "Commit crimes until the wanted level reaches 4 stars.",
+        "Break line of sight and stay hidden until the wanted level is fully lost."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (partner wanted-level escape): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Retail Therapy",
+      "description": "Rob 3 shops back-to-back with your partner without losing your Wanted Level.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 7,
+      "count": 3,
+      "countLabel": "shops in a row",
+      "missable": false,
+      "guide": "Rob 3 shops back-to-back with your partner, keeping a wanted level alive the whole time: the chain breaks if your wanted level fully clears between shops. Pick a cluster of three shops close together before you start, rob the first, and drive straight to the next while the heat is still on. Your partner must be with you, so set this up in free roam as a pair, not during a mission.",
+      "steps": [
+        "Scout three shops close together; bring your partner.",
+        "Rob the first shop and keep the wanted level active.",
+        "Rob the second and third back-to-back without the wanted level clearing."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 3), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (back-to-back shop robberies): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Whip It Good",
+      "description": "Discover 100 vehicles.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "collectibles",
+      "stage": 4,
+      "order": 3,
+      "count": 100,
+      "countLabel": "vehicles discovered",
+      "missable": false,
+      "guide": "Discover 100 different vehicles, the count PlayStation tracks: a vehicle is discovered the first time you encounter and enter it. Variety is the whole job, so change cars often instead of living in one favourite: take something new from every car park, street and marina you pass. Richer districts and the areas opened late in the story hold models that never spawn in the starting areas — another reason this pairs well with exploring all 52 areas.",
+      "steps": [
+        "Get into any vehicle model you have not driven before.",
+        "Sweep car parks and different districts for new models.",
+        "Reach 100 discovered vehicles."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 100), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (vehicle discovery): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Gunslinger",
+      "description": "Take down 5 enemies in a single use of Combat Focus.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 9,
+      "count": 5,
+      "countLabel": "enemies in one Combat Focus",
+      "missable": false,
+      "guide": "Take down 5 enemies during one activation of Combat Focus, the game's combat ability. The trick is staging: do not trigger the ability on the first enemy you see. Start a fight with a group, let at least five enemies gather in the open, then activate Combat Focus and drop all five before it ends. Gang operations (see Pest Control) and robbery escapes are reliable places to find a crowd.",
+      "steps": [
+        "Find a fight with at least five enemies in the open.",
+        "Hold Combat Focus until they are grouped.",
+        "Activate it and take down 5 before it expires."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 5), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (Combat Focus takedowns): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Catch Me If You Can",
+      "description": "Make an unscheduled departure at VCIA.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 10,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "A hidden trophy: make an unscheduled departure at VCIA, Vice City International Airport — in plain terms, take off from the airport in a way the airport did not schedule. The story takes you to VCIA for VCIA Takedown (Hi-Jacked), and that visit is the natural moment to try it; in free roam, get onto the airfield, take a plane, and get airborne. Published lists file it among the hidden open-world secrets (Leonida Hub), so experiment around the airfield if the first attempt does not register.",
+      "steps": [
+        "Travel to VCIA (the story mission VCIA Takedown brings you here).",
+        "Get onto the airfield and into a plane.",
+        "Take off without any scheduled departure to unlock the trophy."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — hidden trophies include open-world secrets: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Challenging Tank",
+      "description": "Kinda hot in these Rhinos.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 11,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "A hidden trophy with a jokey description: the Rhino is the series' tank, and published lists name this as one of the hidden open-world secrets, 'taking a tank for a spin' (Leonida Hub). Find a Rhino, get in, and use it: expect the trophy around taking control of the tank and putting it to work. A heavy wanted level is the usual side effect, so do it when you have an escape planned.",
+      "steps": [
+        "Find a Rhino tank (military hardware in the world).",
+        "Take control of it.",
+        "Drive and use it until the trophy registers."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — hidden open-world secrets, 'like taking a tank for a spin': https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Sneakthief",
+      "description": "Rob a jewelry store without being detected.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 1,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "Rob a jewelry store without being detected: the stealth counterpart to the loud robbery trophies. Go in quietly, keep weapons and noise down, and be out before anyone raises the alarm; detection at any point voids the attempt, but attempts are free, so learn the store's sightlines on a failed run and take the next one clean. It pairs with the robbery set in stage 5 and needs no story progress beyond a jewelry store being open to you.",
+      "steps": [
+        "Enter a jewelry store quietly, avoiding attention.",
+        "Take the goods without being detected.",
+        "Leave undetected to unlock the trophy."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (stealth jewelry robbery): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Maximum Withdrawal",
+      "description": "Rob 5 Bank Vaults and escape.",
+      "grade": "silver",
+      "hidden": false,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 3,
+      "count": 5,
+      "countLabel": "bank vaults robbed",
+      "missable": false,
+      "guide": "A counted silver: rob 5 bank vaults and escape each time; a vault only counts when you get away, so the escape is half the job. Plan each robbery backwards: vehicle placed, route out, and a place to break line of sight, then go in. Five successful vaults is also a strong money earner early in stage 5, which funds the spending trophies that follow.",
+      "steps": [
+        "Scout a bank vault and stage an escape vehicle and route.",
+        "Rob the vault.",
+        "Escape the wanted level; repeat at 5 vaults."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 5), via Exophase and PSNProfiles",
+        "EGamers.io — GTA 6 Trophy List (Maximum Withdrawal among the silver set): https://egamers.io/gta-6-trophy-list-all-55-trophies-and-achievements-plus-the-hardest-ones/"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "A Classic Blitz Play",
+      "description": "Rob an Armored Truck and escape.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 2,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "Rob an armored truck in free roam and escape. Armored trucks run routes in the world; stop one, get its doors open by force, take the cash, and then lose the wanted level that follows. One clean truck-and-escape is all the description asks for, so pick your moment on a quiet stretch of road rather than in the middle of the city.",
+      "steps": [
+        "Find an armored truck on its route.",
+        "Stop it and force the doors to take the cash.",
+        "Escape the wanted level to unlock the trophy."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (armored truck robbery): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "The Goodtime State",
+      "description": "Explore all of Leonida.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "collectibles",
+      "stage": 4,
+      "order": 4,
+      "count": 52,
+      "countLabel": "areas of Leonida",
+      "missable": false,
+      "guide": "Explore all 52 areas of the state of Leonida, the count PlayStation tracks. An area counts when you have actually been into it, so this is a tour, not a map purchase: work the state region by region, and let the other exploration trophies ride along (WAiNK It locations, vehicle discoveries, card pickups). Leave it until the story has opened the whole map, then sweep whatever the in-game map still shows as unvisited.",
+      "steps": [
+        "Open up the full map through the story.",
+        "Visit each area of Leonida at least once.",
+        "Reach all 52 areas."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 52), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (exploring every area): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Pest Control",
+      "description": "Rob an Illegal Operation belonging to each gang.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 4,
+      "count": 9,
+      "countLabel": "gangs robbed",
+      "missable": false,
+      "guide": "Rob an illegal operation belonging to each of Leonida's 9 gangs, the count PlayStation tracks. One operation per gang is enough, but it must be one of each: variety, not volume. Gang territory spreads across the state, so this fills in naturally while you explore all 52 areas; the crowds at an operation are also a good stage for Gunslinger's five takedowns in one Combat Focus.",
+      "steps": [
+        "Identify an illegal operation and which gang owns it.",
+        "Rob it and get away.",
+        "Repeat until all 9 gangs have been robbed once."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 9), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (one illegal operation per gang): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "In The Beginning…",
+      "description": "Enjoy a cocktail with a view on Ocean Beach.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 12,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "A hidden trophy, and one of the list's gentle ones: enjoy a cocktail with a view on Ocean Beach. Head to the beachfront strip, order a cocktail where drinks are served, and take in the view. The name ('In The Beginning…') hints it is an early-game moment; published lists count it among the hidden trophies rather than the visible ones (Leonida Hub's visible/hidden split), which is why it hides behind the spoiler setting here until earned.",
+      "steps": [
+        "Travel to Ocean Beach.",
+        "Order a cocktail at a beachfront spot.",
+        "Enjoy it with the view to unlock the trophy."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — the visible/hidden split of the 55: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Capital Offense",
+      "description": "Smash your way out of a vehicle showroom in classic style.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 13,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "A hidden trophy: smash your way out of a vehicle showroom, in a vehicle, through the glass, 'in classic style' as the description puts it. Take a car inside a showroom (or use one on display), aim at the storefront, and drive out through it. Published lists file it among the hidden trophies (Leonida Hub's split); if a showroom will not let you in with a car, try the display vehicles themselves.",
+      "steps": [
+        "Enter a vehicle showroom.",
+        "Get into a vehicle inside it.",
+        "Drive out through the storefront glass to unlock the trophy."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — the visible/hidden split of the 55: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Let’s Go Bowling",
+      "description": "Follow-through at the Kolt & Associates' bowling alley.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "activities",
+      "stage": 3,
+      "order": 4,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "A hidden trophy: 'follow-through' at the Kolt & Associates bowling alley — go bowling there, and bowl a proper follow-through shot. Bowling is one of the world's activities, so a visit also samples an activity type for Master of None. Published lists name bowling among the hidden open-world secrets (Leonida Hub), and the trophy stays masked under this guide's spoiler setting until you earn it.",
+      "steps": [
+        "Travel to the Kolt & Associates bowling alley.",
+        "Play a game of bowling there.",
+        "Bowl with a follow-through to unlock the trophy."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — hidden open-world secrets, bowling among them: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Personal Best",
+      "description": "A partnership with mass appeal.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 14,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "A hidden trophy with a deliberately vague description: 'a partnership with mass appeal'. Published lists give no firmer condition than the description itself, and this guide will not invent one: the honest reading is a shared moment between the two partners that draws a crowd's attention, so spend time doing things as a pair in public places and watch for it while you work the other partner trophies (Hot Together, Retail Therapy). It is masked here until earned, like every hidden trophy.",
+      "steps": [
+        "Play as a partnership in public, populated places.",
+        "Work the other partner trophies (Hot Together, Retail Therapy) in the same sessions.",
+        "The trophy unlocks when the described moment lands."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — the visible/hidden split of the 55: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Actions Speak Louder",
+      "description": "Choices made (for better or worse).",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 16,
+      "count": 500,
+      "countLabel": "choices tracked",
+      "missable": false,
+      "guide": "A hidden trophy about the choices you make, 'for better or worse': PlayStation tracks a count running to 500 for it, the largest count on the list. Choices accumulate through the story and the world, so this is a play-the-game trophy rather than a task: it fills in as you make decisions across a full playthrough, and the 100% run in stage 6 is far longer than the count needs. If it has not popped by the end of the story, keep playing free roam and interacting; the count keeps moving.",
+      "steps": [
+        "Play the story and make the choices it offers.",
+        "Keep interacting in free roam; choices accumulate.",
+        "The trophy unlocks as the tracked count completes (PSN tracks to 500)."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden; PSN tracks a count to 500), via Exophase and PSNProfiles",
+        "Leonida Hub — the visible/hidden split of the 55: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Bad Luck, I Guess",
+      "description": "Second time's the charm.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 15,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "A hidden trophy: 'Second time's the charm' — succeed at something on the second attempt, after a first attempt failed. The description does not name the activity, and published lists leave the condition at the description, so the practical advice is: when something in the world can be attempted again after a failure (a challenge, a contest, a stunt), fail it once on purpose, then succeed on the retry, and the trophy should register. It costs nothing to try this pattern wherever the game offers a rematch.",
+      "steps": [
+        "Find a repeatable attempt: a challenge or contest you can fail and retry.",
+        "Fail the first attempt deliberately.",
+        "Succeed on the second attempt to unlock the trophy."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — the visible/hidden split of the 55: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "The Truth Is Out There",
+      "description": "What the hell just happened?",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 17,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "A hidden trophy for witnessing something strange: the description ('What the hell just happened?') is the whole clue, and published lists file it with the hidden open-world secrets (Leonida Hub). Strange events in this series hide off the beaten path, at odd hours and in odd places, so the road to it is exploration itself: work the 52 areas and the WAiNK locations, linger in remote spots, and when something inexplicable happens, stay and watch it play out.",
+      "steps": [
+        "Explore remote areas, especially at night, while working the map trophies.",
+        "When a strange event starts, stay and witness it fully.",
+        "The trophy unlocks once you have seen it."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — hidden trophies include open-world secrets: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Ten Pin",
+      "description": "Bowl 'em over with a melee drive-by.",
+      "grade": "bronze",
+      "hidden": true,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 18,
+      "count": null,
+      "countLabel": "",
+      "missable": false,
+      "guide": "A hidden trophy with a bowling pun for a name and a very literal condition: knock a person down with a melee drive-by — strike a pedestrian from a moving vehicle with a melee attack. Line up a lone pedestrian, drive past at moderate speed, and swing as you pass; too fast and you simply run them down (which is a different thing), too slow and the swing misses. A quiet street and a patient driver make it a two-minute job.",
+      "steps": [
+        "Find a lone pedestrian on a quiet street.",
+        "Drive past at moderate speed.",
+        "Land a melee attack from the vehicle as you pass to knock them down."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, hidden), via Exophase and PSNProfiles",
+        "Leonida Hub — the visible/hidden split of the 55: https://leonidahub.org/en/news/gta-vi-reportedly-has-55-ps5-trophies-platinum-included-as-xbox-and-playstation-data-line-up"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Dime on the Dollar",
+      "description": "Earn $250,000 laundering Marked Bills through your contacts.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 19,
+      "count": 250000,
+      "countLabel": "dollars laundered",
+      "missable": false,
+      "guide": "Earn $250,000 by laundering Marked Bills through your contacts, the amount PlayStation tracks. Marked Bills come from the robbery economy, so this trophy is the downstream half of stage 5: rob (vaults, operations, trucks), take the marked money to your contacts, and launder it in bulk rather than in dribs. The counter only moves on laundered money, not on cash earned clean, so route every marked bill through the contacts until the quarter million is reached.",
+      "steps": [
+        "Earn Marked Bills from robberies (vaults, operations, trucks).",
+        "Take them to your contacts to launder.",
+        "Reach $250,000 laundered in total."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked amount $250,000), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (laundering marked bills): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Treat Yo Self",
+      "description": "Spend $100,000 across all shops.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 20,
+      "count": 100000,
+      "countLabel": "dollars spent in shops",
+      "missable": false,
+      "guide": "Spend $100,000 across all shops in total, the amount PlayStation tracks. It does not have to be one purchase or one shop: every shop spend counts. The natural way is to stop economising once the robbery money is flowing: buy the clothes, weapons, vehicle work and services you actually want, and the hundred thousand passes quickly in the late game. Buying the 8 garage properties is a separate trophy (Little Boxes); ordinary shop spending is what counts here.",
+      "steps": [
+        "Earn money through stage 5's robberies and laundering.",
+        "Spend freely in shops of every kind.",
+        "Reach $100,000 spent in total."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked amount $100,000), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (shop spending): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Little Boxes",
+      "description": "Purchase all garage properties.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 22,
+      "count": 8,
+      "countLabel": "garage properties",
+      "missable": false,
+      "guide": "Purchase all 8 garage properties, the count PlayStation tracks. Garages are bought with money earned elsewhere, so this sits late in stage 5, after the vaults and laundering have filled the bank. Buy them as you find them if funds allow; the eighth purchase unlocks the trophy. Owning the garages also gives the vehicle work (discovery, Scooter Bros registrations) somewhere to live.",
+      "steps": [
+        "Build funds through robberies and laundering.",
+        "Buy each garage property as you find it.",
+        "The 8th garage unlocks the trophy."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 8), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (garage properties): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "On the Spot",
+      "description": "Register 10 vehicles to the Scooter Bros app.",
+      "grade": "bronze",
+      "hidden": false,
+      "kind": "freeroam",
+      "stage": 5,
+      "order": 21,
+      "count": 10,
+      "countLabel": "vehicles registered",
+      "missable": false,
+      "guide": "Register 10 vehicles to the Scooter Bros app, the count PlayStation tracks. Registration is done per vehicle through the app, so the habit to build is: every time you take a vehicle you intend to keep, register it there and then. Ten registrations is a small count that fills in naturally while you discover 100 vehicles for Whip It Good; if you reach the end short, register the next ten cars you touch.",
+      "steps": [
+        "Open the Scooter Bros app with a vehicle you are keeping.",
+        "Register the vehicle in the app.",
+        "Repeat until 10 vehicles are registered."
+      ],
+      "sources": [
+        "PlayStation — official trophy list (name, description, grade, tracked count 10), via Exophase and PSNProfiles",
+        "Leonida Interactive — Unlock Guide (Scooter Bros registrations): https://leonidainteractive.com/wiki/guides/trophies-achievements/"
+      ]
+    }
+  ]
+}
