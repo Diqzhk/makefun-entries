@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neon Palms — Cover Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="topbar">
+  <div class="brand">
+    <svg id="brand-mark" viewBox="0 0 48 48" width="34" height="34" aria-hidden="true">
+      <circle cx="24" cy="24" r="21" fill="none" stroke="#ffc857" stroke-width="2.5"/>
+      <circle cx="24" cy="27" r="8" fill="#ff5da2"/>
+      <path d="M24 27 L24 12 M24 14 C20 8 13 7 9 9 C14 11 19 13 24 14 M24 14 C28 8 35 7 39 9 C34 11 29 13 24 14 M24 16 C21 12 16 11 12 12 C17 14 20 15 24 16" stroke="#37e0d8" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <path d="M10 36 Q17 33 24 36 T38 36" stroke="#37e0d8" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    </svg>
+    <div class="brand-text">
+      <h1>Neon Palms</h1>
+      <p>cover studio</p>
+    </div>
+  </div>
+  <p class="tagline">Turn a photo into poster cover art. Everything stays on your machine.</p>
+</header>
+
+<main id="workspace">
+  <section id="stage-wrap">
+    <canvas id="stage" width="1080" height="1080"></canvas>
+    <p id="stage-hint">Click a panel to select it, drag the photo inside it, scroll to zoom, nudge with the arrow keys. Pick a photo from the tray to fill the selected panel.</p>
+  </section>
+
+  <aside id="rail">
+    <section class="group" id="group-photos">
+      <h2>Photos</h2>
+      <div id="tray"></div>
+      <label class="file-pick" for="file-input">Add your photos</label>
+      <input id="file-input" type="file" accept="image/*" multiple hidden>
+      <label class="check-row">
+        <input id="spread-toggle" type="checkbox">
+        <span>Spread one photo across every panel</span>
+      </label>
+      <button id="shuffle-button" type="button">Shuffle photos through the panels</button>
+    </section>
+
+    <section class="group" id="group-layout">
+      <h2>Layout</h2>
+      <div id="layout-list" class="button-grid"></div>
+    </section>
+
+    <section class="group" id="group-grade">
+      <h2>Colour grade</h2>
+      <div id="grade-list" class="button-grid"></div>
+      <label class="check-row">
+        <input id="ink-toggle" type="checkbox">
+        <span>Ink print (posterised screen-print look)</span>
+      </label>
+      <label class="slider-row">
+        <span>Grain</span>
+        <input id="grain-slider" type="range" min="0" max="100" value="35">
+      </label>
+    </section>
+
+    <section class="group" id="group-caption">
+      <h2>Caption</h2>
+      <label class="field">
+        <span>Title</span>
+        <input id="title-input" type="text" maxlength="26" value="NEON SHORES">
+      </label>
+      <label class="field">
+        <span>Script line</span>
+        <input id="subtitle-input" type="text" maxlength="40" value="a palm city story">
+      </label>
+      <div class="stars-row">
+        <span>Heat</span>
+        <div id="star-stepper">
+          <button id="star-down" type="button" aria-label="Less heat">−</button>
+          <span id="star-count">3 ★</span>
+          <button id="star-up" type="button" aria-label="More heat">+</button>
+        </div>
+      </div>
+      <label class="slider-row">
+        <span>Photo zoom</span>
+        <input id="zoom-slider" type="range" min="100" max="320" value="100">
+      </label>
+    </section>
+
+    <section class="group" id="group-export">
+      <h2>Export</h2>
+      <label class="field">
+        <span>Post size</span>
+        <select id="size-select">
+          <option value="square">Square — 1080 × 1080</option>
+          <option value="portrait">Portrait — 1080 × 1350</option>
+          <option value="landscape">Landscape — 1920 × 1080</option>
+          <option value="story">Story — 1080 × 1920</option>
+        </select>
+      </label>
+      <button id="export-button" type="button">Download cover PNG</button>
+      <p id="export-note">Renders at full size and saves a PNG, ready to post.</p>
+    </section>
+  </aside>
+</main>
+
+<footer id="footer">
+  <p>Neon Palms Cover Studio — an original fan tool. Not affiliated with any game publisher. Fonts: Anton and Pacifico, SIL Open Font License 1.1 (see app/fonts).</p>
+</footer>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
