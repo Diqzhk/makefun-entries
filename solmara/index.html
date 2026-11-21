@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOLMARA HEAT — a tiny open-world crime game</title>
+<style>
+  :root{
+    --gold:#ffc94d; --cyan:#57e6ff; --pink:#ff5d8f; --ink:rgba(10,14,22,.78);
+    --line:rgba(255,201,77,.45); --txt:#f4f1e8; --dim:#b9c2cc;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:100%;height:100%;overflow:hidden;background:#0b0e14;
+    font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--txt);
+    -webkit-user-select:none;user-select:none}
+  #view{position:fixed;inset:0;display:block}
+  .panel{background:var(--ink);border:1px solid var(--line);border-radius:10px;
+    padding:10px 12px;backdrop-filter:blur(3px);box-shadow:0 4px 18px rgba(0,0,0,.45)}
+  .hidden{display:none !important}
+
+  /* ---------- top left: mission + dispatch ---------- */
+  #missionPanel{position:fixed;top:14px;left:14px;width:308px;z-index:5}
+  #missionPanel.urgent{border-color:#ff5347;box-shadow:0 0 0 1px #ff5347,0 4px 22px rgba(255,60,40,.4)}
+  #missionPanel .kick{font-size:10px;letter-spacing:.22em;color:var(--gold);font-weight:700}
+  #missionPanel h2{font-size:21px;font-style:italic;font-weight:800;line-height:1.05;margin:2px 0 4px}
+  #stageRow{display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;color:var(--dim);font-weight:700}
+  .pips{display:inline-flex;gap:4px}
+  .pip{width:16px;height:6px;border-radius:3px;background:#3a4353}
+  .pip.on{background:var(--gold)} .pip.done{background:#7dd069}
+  #objective{font-size:13.5px;line-height:1.35;margin-top:6px;font-weight:600}
+  #nextLine{font-size:12px;color:var(--cyan);margin-top:3px}
+  #timerLine{font-size:12px;color:var(--gold);margin-top:3px;font-weight:700}
+  #timerLine.urgent{color:#ff5347;animation:pulse .5s infinite alternate}
+  @keyframes pulse{from{opacity:1}to{opacity:.45}}
+  #dispatchPanel{position:fixed;top:196px;left:14px;width:308px;z-index:5;padding:8px 12px}
+  #dispatchPanel .dhead{display:flex;justify-content:space-between;font-size:10.5px;
+    letter-spacing:.18em;color:#ff8f87;font-weight:800}
+  #dispatchPanel .dhead span:last-child{color:var(--dim)}
+  .drow{display:flex;justify-content:space-between;font-size:12px;padding:2.5px 0;
+    border-bottom:1px dashed rgba(255,255,255,.08)}
+  .drow b{color:var(--txt);font-weight:700;letter-spacing:.04em}
+  .drow .role{color:var(--gold);font-weight:700;letter-spacing:.08em}
+  .drow .dist{color:var(--dim);font-variant-numeric:tabular-nums}
+  #dispatchPanel .dfoot{font-size:10px;letter-spacing:.16em;color:var(--dim);padding-top:5px;font-weight:700}
+
+  /* ---------- top right: stars, cash, weapons, crew, vehicle ---------- */
+  #topRight{position:fixed;top:14px;right:14px;z-index:5;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+  #stars{font-size:26px;letter-spacing:4px;color:#39414f;text-shadow:0 2px 6px rgba(0,0,0,.6);line-height:1}
+  #stars .lit{color:var(--gold)}
+  #cashLine{font-size:27px;font-weight:800;color:#8be26b;text-shadow:0 2px 8px rgba(0,0,0,.7);line-height:1}
+  #rankLine{display:flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.2em;color:var(--gold);font-weight:800}
+  #respectWrap{width:130px;height:6px;background:#2b3342;border-radius:3px;overflow:hidden}
+  #respectBar{height:100%;background:linear-gradient(90deg,#ff9d5c,var(--gold));width:40%;display:block}
+  #clockLine{font-size:13px;color:var(--dim);font-weight:700;font-variant-numeric:tabular-nums}
+  #weapons{display:flex;gap:6px}
+  .wslot{width:56px;padding:5px 0 4px;text-align:center;background:var(--ink);
+    border:1px solid rgba(255,255,255,.16);border-radius:8px}
+  .wslot.sel{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold) inset}
+  .wslot .wk{font-size:9px;color:var(--dim);letter-spacing:.1em}
+  .wslot .wn{font-size:12.5px;font-weight:800}
+  .wslot .wa{font-size:10.5px;color:var(--cyan);font-variant-numeric:tabular-nums}
+  #crew{display:flex;flex-direction:column;gap:6px;width:308px}
+  .crewCard{display:flex;gap:9px;align-items:center;background:var(--ink);
+    border:1px solid rgba(255,255,255,.14);border-radius:9px;padding:6px 9px}
+  .crewCard canvas{width:40px;height:40px;border-radius:7px;background:#1c2432;flex:none}
+  .crewCard .cinfo{flex:1;min-width:0}
+  .crewCard .cname{font-size:13px;font-weight:800}
+  .crewCard .crole{font-size:9px;letter-spacing:.18em;color:var(--dim);font-weight:700}
+  .crewCard .cabil{font-size:11.5px;color:var(--gold);font-weight:700}
+  .crewCard .ckey{font-size:10px;color:var(--dim);border:1px solid #4a5468;border-radius:4px;padding:1px 5px}
+  .crewCard .cdwrap{height:4px;background:#2b3342;border-radius:2px;margin-top:3px;overflow:hidden}
+  .crewCard .cdbar{height:100%;background:var(--cyan);width:100%}
+  .crewCard.cooling{opacity:.55}
+  #vehiclePanel{width:308px}
+  #vehiclePanel .vname{font-size:17px;font-style:italic;font-weight:800}
+  #vehiclePanel .vrow{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--dim);margin-top:2px}
+  #dmgWrap{flex:1;height:7px;background:#2b3342;border-radius:4px;margin:0 8px;overflow:hidden}
+  #dmgBar{height:100%;background:#7dd069;width:100%;display:block}
+  #radioLine{font-size:11.5px;color:var(--cyan);font-weight:700;margin-top:4px;letter-spacing:.05em}
+  #radioLine span{color:var(--dim);font-weight:600;letter-spacing:.02em}
+
+  /* ---------- bottom left: minimap + vitals ---------- */
+  #mapBox{position:fixed;left:14px;bottom:52px;z-index:5;text-align:left}
+  #minimap{width:196px;height:196px;border:2px solid rgba(255,255,255,.25);border-radius:10px;
+    background:#101623;display:block;box-shadow:0 4px 18px rgba(0,0,0,.5)}
+  #districtBox{margin-top:7px;width:196px}
+  #districtName{font-size:13px;letter-spacing:.18em;font-weight:800}
+  #standingWrap{height:5px;background:#2b3342;border-radius:3px;margin-top:4px;overflow:hidden}
+  #standingBar{height:100%;background:var(--cyan);width:55%;display:block}
+  #standingLbl{font-size:9px;letter-spacing:.2em;color:var(--dim);font-weight:700}
+  #vitals{position:fixed;left:14px;bottom:14px;z-index:5;width:250px}
+  .vbar{height:11px;background:#2b3342;border-radius:6px;overflow:hidden;margin-top:5px}
+  #healthBar{height:100%;background:linear-gradient(90deg,#58c24a,#8be26b);width:100%}
+  #armourBar{height:100%;background:linear-gradient(90deg,#3f8fd2,#57b6ff);width:0%}
+  .vnum{float:right;font-size:11px;color:var(--dim);font-variant-numeric:tabular-nums}
+
+  /* ---------- bottom centre/right ---------- */
+  #dialogue{position:fixed;left:50%;transform:translateX(-50%);bottom:56px;width:600px;z-index:6;
+    display:flex;gap:11px;align-items:center}
+  #dialogue canvas{width:52px;height:52px;border-radius:9px;background:#1c2432;flex:none}
+  #dlgName{font-size:11px;letter-spacing:.2em;color:var(--gold);font-weight:800}
+  #dlgText{font-size:15.5px;line-height:1.35;font-weight:600}
+  #speedo{position:fixed;right:20px;bottom:44px;z-index:5;text-align:right;color:var(--txt)}
+  #speedo .num{font-size:46px;font-weight:800;font-style:italic;line-height:.95;text-shadow:0 3px 10px rgba(0,0,0,.65)}
+  #speedo .unit{font-size:12px;letter-spacing:.25em;color:var(--dim);font-weight:700}
+  #hints{position:fixed;left:0;right:0;bottom:9px;z-index:4;text-align:center;
+    font-size:11.5px;color:rgba(240,238,230,.75);text-shadow:0 1px 4px #000}
+  #hints b{color:var(--gold)}
+
+  /* ---------- overlays ---------- */
+  .overlay{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;text-align:center}
+  #menu{background:radial-gradient(ellipse at 50% 65%,rgba(255,120,60,.20),rgba(5,8,14,.88) 70%)}
+  #menu h1{font-size:76px;font-style:italic;font-weight:900;letter-spacing:.01em;line-height:.95;
+    color:#fff;text-shadow:0 0 34px rgba(255,120,60,.55),0 4px 0 #b3375e}
+  #menu h1 em{color:var(--gold);font-style:italic}
+  #menu .sub{margin-top:10px;font-size:15px;letter-spacing:.34em;color:var(--cyan);font-weight:700}
+  #menu .cta{margin-top:44px;font-size:17px;font-weight:800;letter-spacing:.12em;color:#10131a;
+    background:linear-gradient(180deg,#ffd97a,var(--gold));padding:13px 34px;border-radius:30px;
+    box-shadow:0 8px 26px rgba(255,180,60,.4);animation:pulse 1s infinite alternate}
+  #menu .fine{margin-top:20px;font-size:12px;color:var(--dim);line-height:1.7}
+  #flashOverlay{background:rgba(8,10,16,.72);z-index:30}
+  #flashOverlay h1{font-size:64px;font-style:italic;font-weight:900;letter-spacing:.06em}
+  #flashOverlay p{margin-top:10px;font-size:16px;color:var(--dim)}
+  #pauseOverlay{background:rgba(8,10,16,.6);z-index:25}
+  #pauseOverlay h1{font-size:44px;font-style:italic;font-weight:900;letter-spacing:.1em}
+
+  /* ---------- stats screen ---------- */
+  #statsScreen{position:fixed;inset:0;z-index:15;background:rgba(6,9,14,.985);padding:26px 34px;overflow:hidden}
+  #statsScreen .shead{display:flex;justify-content:space-between;align-items:baseline;
+    border-bottom:2px solid var(--gold);padding-bottom:8px}
+  #statsScreen .shead h1{font-size:30px;font-style:italic;font-weight:900}
+  #statsScreen .shead h1 em{color:var(--gold);font-style:italic}
+  #statsScreen .stabs{font-size:12px;letter-spacing:.24em;color:var(--dim);font-weight:800}
+  #statsScreen .stabs b{color:var(--gold)}
+  #statsGrid{display:grid;grid-template-columns:300px 1fr 300px;gap:26px;margin-top:18px}
+  .scol h3{font-size:11px;letter-spacing:.22em;color:var(--dim);font-weight:800;margin:14px 0 7px}
+  .scol h3:first-child{margin-top:0}
+  #ringWrap{position:relative;width:150px;height:150px;margin:2px auto 6px}
+  #ringCanvas{width:150px;height:150px}
+  #ringPct{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  #ringPct .big{font-size:33px;font-weight:900}
+  #ringPct .sm{font-size:9px;letter-spacing:.3em;color:var(--dim);font-weight:800}
+  .strand{display:flex;align-items:center;gap:9px;font-size:12.5px;margin-top:7px}
+  .strand .sl{flex:0 0 104px;color:var(--txt)}
+  .strand .sw{flex:1;height:7px;background:#2b3342;border-radius:4px;overflow:hidden}
+  .strand .sb{height:100%;background:var(--gold);display:block}
+  .strand .sv{flex:0 0 44px;text-align:right;color:var(--dim);font-variant-numeric:tabular-nums}
+  .jobRow{font-size:13.5px;padding:4.5px 0;border-bottom:1px dashed rgba(255,255,255,.09);display:flex;justify-content:space-between}
+  .jobRow .st{color:var(--gold);letter-spacing:2px}
+  .jobRow.cur{color:var(--gold);font-weight:700}
+  .jobRow.lock{color:#5d6774}
+  #cityMap{width:100%;border:1px solid rgba(255,255,255,.2);border-radius:10px;background:#0d1320;display:block}
+  .ledgerRow{display:flex;justify-content:space-between;font-size:13px;padding:4px 0;border-bottom:1px dashed rgba(255,255,255,.09)}
+  .ledgerRow b{font-variant-numeric:tabular-nums}
+  #rankBig{font-size:30px;font-style:italic;font-weight:900;color:var(--gold);line-height:1}
+  .slot{border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:8px 11px;margin-top:8px;font-size:12px}
+  .slot .sh{display:flex;justify-content:space-between;color:var(--gold);font-weight:800;letter-spacing:.1em;font-size:11px}
+  .slot.empty{color:#5d6774;border-style:dashed}
+  #statsFoot{margin-top:14px;text-align:center;font-size:12.5px;color:var(--dim)}
+  #statsFoot b{color:var(--gold)}
+</style>
+</head>
+<body>
+<canvas id="view"></canvas>
+
+<!-- mission -->
+<div id="missionPanel" class="panel hidden">
+  <div class="kick" id="missionKick">MISSION · MARISOL VEGA</div>
+  <h2 id="missionTitle">First Run</h2>
+  <div id="stageRow"><span id="stageText">STAGE 1/2</span><span class="pips" id="stagePips"></span></div>
+  <div id="objective">Pick up the package</div>
+  <div id="nextLine">▸ Then: —</div>
+  <div id="timerLine" class="hidden">⏱ 90s on the clock</div>
+</div>
+
+<!-- police dispatch -->
+<div id="dispatchPanel" class="panel hidden">
+  <div class="dhead"><span>SPD DISPATCH</span><span id="dispatchCount">0 UNITS</span></div>
+  <div id="dispatchRows"></div>
+  <div class="dfoot" id="dispatchFoot">CITYWIDE HUNT</div>
+</div>
+
+<!-- top right cluster -->
+<div id="topRight">
+  <div id="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+  <div id="cashLine">$0</div>
+  <div id="rankLine"><span id="rankName">COURIER</span><span id="respectWrap"><span id="respectBar"></span></span><span id="clockLine">17:00</span></div>
+  <div id="weapons"></div>
+  <div id="crew"></div>
+  <div id="vehiclePanel" class="panel hidden">
+    <div class="vname" id="vehName">Vela GT Spyder</div>
+    <div class="vrow"><span>DMG</span><span id="dmgWrap"><span id="dmgBar"></span></span><span id="dmgPct">0%</span></div>
+    <div id="radioLine">♪ SUNWAVE FM <span>Coastal Drive · Nonstop Sun</span></div>
+  </div>
+</div>
+
+<!-- bottom left -->
+<div id="mapBox" class="hidden">
+  <canvas id="minimap" width="196" height="196"></canvas>
+  <div id="districtBox">
+    <div id="districtName">CITY CENTRE</div>
+    <div id="standingWrap"><div id="standingBar"></div></div>
+    <div id="standingLbl">STANDING</div>
+  </div>
+</div>
+<div id="vitals" class="hidden">
+  <div><span class="vnum" id="healthNum">100</span><div class="vbar"><div id="healthBar"></div></div></div>
+  <div><span class="vnum" id="armourNum">0</span><div class="vbar"><div id="armourBar"></div></div></div>
+</div>
+
+<!-- dialogue / speed / hints -->
+<div id="dialogue" class="panel hidden">
+  <canvas id="dlgPortrait" width="104" height="104"></canvas>
+  <div><div id="dlgName">MARISOL VEGA</div><div id="dlgText"></div></div>
+</div>
+<div id="speedo" class="hidden"><div class="num" id="speedNum">0</div><div class="unit">KM/H</div></div>
+<div id="hints"><b>WASD</b> move / drive &nbsp;<b>E</b> enter vehicle &nbsp;<b>Click</b> shoot &nbsp;<b>1–5</b> weapons &nbsp;<b>Q/Z/C</b> crew &nbsp;<b>R</b> radio &nbsp;<b>T</b> taxi &nbsp;<b>Tab</b> map &amp; stats &nbsp;<b>P</b> pause</div>
+
+<!-- stats screen -->
+<div id="statsScreen" class="hidden">
+  <div class="shead">
+    <h1>SOLMARA <em>HEAT</em></h1>
+    <div class="stabs"><b>MAP</b> &nbsp; STORY &nbsp; STATS &nbsp; CREW &nbsp; SAVE</div>
+    <div id="statsClock" style="font-weight:700;color:var(--dim)">17:36</div>
+  </div>
+  <div id="statsGrid">
+    <div class="scol">
+      <div id="ringWrap"><canvas id="ringCanvas" width="300" height="300"></canvas>
+        <div id="ringPct"><div class="big" id="ringNum">0%</div><div class="sm">COMPLETE</div></div></div>
+      <div id="strandList"></div>
+      <h3>Story Jobs</h3>
+      <div id="jobList"></div>
+    </div>
+    <div class="scol">
+      <canvas id="cityMap" width="880" height="700"></canvas>
+      <div id="statsFoot">You are in <b id="footDistrict">CITY CENTRE</b> · Standing <span id="footStanding">71</span> · Rank <b id="footRank">WHEELMAN</b></div>
+    </div>
+    <div class="scol">
+      <h3>Street Rank</h3>
+      <div id="rankBig">COURIER</div>
+      <div id="respectLine" style="font-size:12px;color:var(--dim);margin-top:3px">0 respect</div>
+      <h3>Career</h3>
+      <div id="ledger"></div>
+      <h3>Save Slots</h3>
+      <div id="slotList"></div>
+    </div>
+  </div>
+  <div style="text-align:center;font-size:12px;color:var(--dim);margin-top:10px"><b style="color:var(--gold)">Tab / Esc</b> — back to the street &nbsp;·&nbsp; Progress saves itself as you play</div>
+</div>
+
+<!-- overlays -->
+<div id="menu" class="overlay">
+  <h1>SOLMARA <em>HEAT</em></h1>
+  <div class="sub">ONE CITY · ONE CREW · NO BRAKES</div>
+  <div class="cta">CLICK TO START THE ENGINE</div>
+  <div class="fine">Run jobs for Marisol Vega across seven districts of Solmara.<br>
+  Steal cars, dodge the SPD, keep the crew close. WASD to move, E to jack a ride.</div>
+</div>
+<div id="pauseOverlay" class="overlay hidden"><h1>PAUSED</h1><p style="color:var(--dim);margin-top:8px">P — back to the street</p></div>
+<div id="flashOverlay" class="overlay hidden"><h1 id="flashTitle">BUSTED</h1><p id="flashText"></p></div>
+
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.min.js" } }
+</script>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
